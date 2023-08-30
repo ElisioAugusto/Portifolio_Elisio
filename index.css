@@ -1,0 +1,272 @@
+.inicial {
+    padding: 0px 100px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container {
+    padding: 0px 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid purple;
+}
+
+nav a:hover {
+    color: #5bbe42;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer a:hover {
+    color: purple;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== Card/Menu ==== */
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    background-color: #333333;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card:pre
+
+.card p {
+    color: #a3a5ae;
+    font-size: 16px;
+}
+
+.image {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+  
+.blue {
+    border-left: 3px solid #4895ff;
+}
+.blue h2 {
+    color: #4895ff;
+}
+.blue a:hover {
+    color: #4895ff;
+}
+
+.green {
+    border-left: 3px solid #3bb54a;
+}
+.green h2 {
+    color: #3bb54a;
+}
+.green a:hover {
+    color: #3bb54a;
+}
+
+.red {
+    border-left: 3px solid #b3404a;
+}
+.red h2 {
+    color: #b3404a;
+}
+.red a:hover {
+    color: #b3404a;
+}
+
+/* ==== Slide de fotos ==== */
+.slider-container {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ==== perfil resumido ==== */
+
+.profile {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #3bb54a;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #163f1b;
+}
+
+/* ==== configuração bloco pessoal ==== */
+.personal-life {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #4895ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.personal-life h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #183256;
+
+}
+
+.personal-life h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #183256;
+}
+
+.personal-life p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ==== configuralçao bloco profissional ==== */
+.professional-experience, .certificates {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #b3404a;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.experience, .certificate {
+    margin-bottom: 20px;
+}
+
+.professional-experience h2, .certificates h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #4f1d21;
+}
+
+.experience h3, .certificate h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #4f1d21;
+}
+
+.experience h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4f1d21;
+}
+
+.experience p, .certificate p {
+    font-size: 16px;
+    line-height: 1.6;
+}
